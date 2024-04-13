@@ -41,6 +41,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <30 31>;
         };
+
+        equals {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <1 3>;
+        };
     };
 
     keymap {
