@@ -51,6 +51,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <9 10>;
         };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
