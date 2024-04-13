@@ -8,11 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping-term-ms = <400>;
-    quick-tap-ms = <0>;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -25,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt GRAVE TAB  &kp Q               &kp W           &kp E               &kp R             &kp T          &kp Y  &kp U              &kp I                &kp O           &kp P                   &kp BSPC
-&kp ESCAPE     &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND D  &mt LEFT_SHIFT F  &kp G          &kp H  &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt LEFT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LSHFT      &kp Z               &kp X           &kp C               &kp V             &kp B          &kp N  &kp M              &kp COMMA            &kp DOT         &kp FSLH                &kp ENTER
-                                                   &kp LEFT_CONTROL    &kp LEFT_COMMAND  &lt 1 SPACE    &mo 2  &kp SPACE          &mo 3
+&mt GRAVE TAB  &kp Q  &kp W  &kp E             &kp R             &kp T          &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp ESCAPE     &kp A  &kp S  &kp D             &kp F             &kp G          &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z  &kp X  &kp C             &kp V             &kp B          &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                             &kp LEFT_CONTROL  &kp LEFT_COMMAND  &lt 1 SPACE    &mo 2  &kp SPACE  &mo 3
             >;
         };
 
@@ -64,9 +59,9 @@
 
         layer_3 {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &kp PAGE_UP    &kp UP_ARROW  &trans     &kp HOME  &kp DEL
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &kp LEFT       &kp DOWN      &kp RIGHT  &trans    &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp PAGE_DOWN  &trans        &trans     &kp END   &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &kp PAGE_UP    &trans    &kp K_COPY    &kp HOME   &kp DEL
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp PAGE_DOWN  &trans    &trans        &kp END    &trans
                          &trans   &trans   &trans    &trans  &trans         &trans
             >;
         };
